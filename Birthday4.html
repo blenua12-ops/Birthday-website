@@ -1,0 +1,132 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Through My Eyes 🖤</title>
+    <link rel="stylesheet" href="Birthday.css">
+</head>
+
+<body class="poem-page">
+
+    <div class="poem">
+        <h1>You Through My Eyes</h1>
+
+        <div class="poem-text">
+
+            <p>
+                In a world full of fake, too hard to know what’s real<br>
+                Love or hate, you never know what to feel<br>
+                Money or respect, will be hard to choose<br>
+                And having you feels hard to lose
+            </p>
+
+            <p>
+                Things I don’t tell you much, things that are hard to tell<br>
+                Some that feels cringe, some might make you fail<br>
+                But it’s your birthday so let me tell you out loud<br>
+                Let the world hear, know the brother I found
+            </p>
+
+            <p>
+                Hard to find like a diamond underground<br>
+                Won’t find like him if I look around<br>
+                Someone with football taste, someone with funny memes<br>
+                Someone who will spam my phone with 100 reels
+            </p>
+
+            <p>
+                Someone that loves me, who knows me well<br>
+                Someone that will stay on my rise and fail<br>
+                Someone with anger issues and high attitude<br>
+                Someone who is kind as much as he is rude
+            </p>
+
+            <p>
+                Someone I love with all of my heart<br>
+                Someone I will never want to see fart 😂
+            </p>
+
+            <p>
+                Made many memories, more than I could say<br>
+                Just talking to him will make my day<br>
+                I saw him happy, annoyed and sad<br>
+                I saw him being good and also bad
+            </p>
+
+            <p>
+                I saw me in another soul<br>
+                With the same weird jokes, that give a heaven foul 😂
+            </p>
+
+            <p>
+                He has been with me through everything<br>
+                As a fool nga not a human being
+            </p>
+
+            <p>
+                I love him to death hate him a lot too<br>
+                He is someone I would take a bullet to
+            </p>
+
+            <p>
+                I don’t know where I got this writing for you sickness<br>
+                But know that when I wrote it I was forced to do this.
+            </p>
+
+        </div>
+
+        <p class="ending">Happy Birthday, yene wd wendm. 🖤</p>
+
+    </div>
+    <div class="rating-box">
+
+        <h2>When You Finish Reading Rate it🖤</h2>
+
+        <div class="stars">
+            <span onclick="rate(1)">★</span>
+            <span onclick="rate(2)">★</span>
+            <span onclick="rate(3)">★</span>
+            <span onclick="rate(4)">★</span>
+            <span onclick="rate(5)">★</span>
+        </div>
+
+        <p id="rating-message"></p>
+
+        <button onclick="submitRating()">Submit Rating</button>
+
+    </div>
+
+    <script>
+        let rating = 0;
+
+        function rate(number) {
+            rating = number;
+
+            let stars = document.querySelectorAll(".stars span");
+
+            stars.forEach((star, index) => {
+                if (index < number) {
+                    star.classList.add("selected");
+                } else {
+                    star.classList.remove("selected");
+                }
+            });
+
+            document.getElementById("rating-message").textContent =
+                "You rated it " + number + "/5 ⭐";
+        }
+
+        function submitRating() {
+
+            if (rating < 5) {
+                alert("❌ Blenua said: RATE 5 STARS 😭🖤");
+            } else {
+                alert("⭐⭐⭐⭐⭐ PERFECT. THAT'S WHAT I WANTED 😌🖤");
+            }
+
+        }
+    </script>
+</body>
+
+</html>
