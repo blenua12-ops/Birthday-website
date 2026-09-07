@@ -1,0 +1,267 @@
+body {
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.passcode-box {
+    width: 350px;
+    padding: 30px;
+    margin: 20px;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+
+#passcode {
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.welcome-box {
+    width: 500px;
+    padding: 35px;
+    border: 1px solid whitesmoke;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.08);
+}
+
+.welcome-box h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+.welcome-box p {
+    margin: 15px 0;
+    font-size: 17px;
+}
+
+.message-box {
+    width: 800px;
+    max-width: 90%;
+    margin: 60px auto;
+    box-sizing: border-box;
+}
+
+.message-box h1 {
+    font-size: 36px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+}
+
+.message-box p {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: left;
+}
+
+.message-page {
+    display: block;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.message-page p {
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: left;
+    line-height: 1.8;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.poem-page {
+
+    background-color: black;
+
+    color: whitesmoke;
+
+    min-height: 100vh;
+
+    padding: 60px 20px;
+
+    box-sizing: border-box;
+
+}
+
+.poem {
+
+    width: 750px;
+
+    max-width: 90%;
+
+    margin: auto;
+
+    padding: 45px;
+
+    border: 1px solid whitesmoke;
+
+    border-radius: 20px;
+
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.08);
+
+    box-sizing: border-box;
+
+}
+
+.poem h1 {
+
+    font-size: 42px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 10px;
+
+}
+
+.poem-text {
+
+    text-align: center;
+
+}
+
+.poem-text p {
+
+    font-size: 18px;
+
+    line-height: 2;
+
+    margin-bottom: 35px;
+
+}
+
+.ending {
+
+    margin-top: 50px;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+}
+.poem {
+    animation: poemAppear 1.5s ease-out forwards;
+}
+
+.poem h1 {
+    animation: titleAppear 1s ease-out 0.5s both;
+}
+
+.poem-text {
+    animation: textAppear 1.2s ease-out 0.9s both;
+}
+
+.ending {
+    animation: endingAppear 1.2s ease-out 1.3s both;
+}
+
+@keyframes poemAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px) scale(0.97);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes titleAppear {
+    from {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes textAppear {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes endingAppear {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+.rating-box {
+    margin: 70px auto 30px;
+    text-align: center;
+}
+
+.rating-box h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.stars {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.stars span {
+    color: #444;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.stars span:hover {
+    transform: scale(1.2);
+}
+
+.stars span.selected {
+    color: white;
+}
+
+#rating-message {
+    font-size: 16px;
+    min-height: 24px;
+}
+
+.rating-box button {
+    margin-top: 10px;
+    background-color: whitesmoke;
+    color: black;
+    padding: 12px 20px;
+    border-radius: 8px;
+}
+
